@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Название</title>
+    <link href="styleHomePage.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <header>
+        <section class = "head">
+            <div class = "title-conteiner">
+                <p class = "mainTitle">
+                    Название проекта
+                </p>
+            </div>
+            <div class = "taskbar">
+                <div class = "searchConteiner">
+                <img class = "iconSearch" src = "search.png">
+                <input placeholder = "Введите запрос" class = "inputSearch">
+                </div>
+                <div class = "logInConteiner">
+                    <button class = "buttonLogIn" id = logIn>
+                        Вход
+                    </button>
+                </div>
+                <div class = "customConteiner">
+                    <img src = "Customization.png" class = "settings">
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class = "popularTheme">
+            <div class = "conteinerThemePop">
+                <p class = "pop-theme">
+                    Хромосомы: носители генетической информации
+                </p>
+            </div>
+        </section>
+        <section class = "editor">
+            <div class = "nameEditorConteiner">
+                <p class = "nameEditor">
+                    Редактор статей
+                </p>
+            </div>
+            <div class = "editorsTaskbar">
+                <div class = "articlesConteiner">
+                    <button class = "myArticles">
+                        Мои статьи
+                    </button>
+                </div>
+                <div class = "addEditorConteiner">
+                    <img src = "addArticles.png" class = "addEditor" id = "addEditor">
+                </div>
+            </div>
+        </section>
+        <section class = "themes">
+            <div class = "informationBlock">
+                    <div class = "headInformation">
+                        <p class = "name-theme">
+                            Хромосомы: носители генетической информации
+                        </p>
+                    </div>
+                    <div class = "mainInformation">
+                    <div class = "information">
+                        <p class = "text">Хромосомы — это структуры, содержащие ДНК и белки, которые хранят и передают генетическую информацию в клетках. У человека 46 хромосом, объединенных в 23 пары. Они определяют наследственные признаки, такие как цвет глаз, группа крови и предрасположенность к заболеваниям.
+
+Хромосомы состоят из двух хроматид, соединенных центромерой. Во время деления клетки они уплотняются, становясь видимыми под микроскопом. Половина хромосом наследуется от матери, половина — от отца.
+
+Изучение хромосом помогает диагностировать генетические заболевания, такие как синдром Дауна, и понимать эволюционные процессы. Хромосомы — ключ к разгадке тайн наследственности и разнообразия жизни на Земле.</p>
+                <div class="article-category">
+                    <p>
+                    Категория: Биология
+                    </p>
+                </div>
+                    </div>
+                    <div class = "chat">
+                        <div class = "windowChat">
+                            <p class = "start-conversation">
+                                Начните беседу
+                            </p>
+                        </div>
+                        <div class = inputBlock>
+                            <input placeholder = "Введите комментарий" class = "inputMessage" id = "inputMessage">
+                            <img src = "send.png" class = "sendButton" id = "sendButton">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class = "modal-overlay">
+        <section class = "createArticle">
+            <div class = "conteinerNameCreateArticle">
+                <p class = "nameCreateArticle">
+                    Создание публикации
+                </p>
+            </div>
+            <div class = "conteinerInputHeading">
+                <input placeholder="Введите заголовок" class = "inputHeading" id = "inputHeading" maxlength = "55">
+            </div>
+            <div class="conteinerTextArea">
+                <textarea class="inputArticle" placeholder="Введите содержимое статьи"></textarea>
+            </div>
+            <div class = "conteinerCreate">
+                <select class = "select">
+                    <option>
+                        Выбрать категорию
+                    </option>
+                    <option>
+                        Биология
+                    </option>
+                    <option>
+                        Информатика
+                    </option>
+                    <option>
+                        Математика
+                    </option>
+                    <option>
+                        Литература
+                    </option>
+                </select>
+                <button class = "create" id = "createButton">
+                    Создать
+                </button>
+            </div>
+            <p class="char-counter">Символов: 0/100</p>
+        </section>
+        </div>
+        <div class = "modal-backdrop">
+        <section class = "changeArticles">
+            <div>
+                <p class = "NameChangePanel">
+                    Мои статьи
+                </p>
+            </div>
+            <div class = "listOfThemes">
+                
+            </div>
+        </section>
+        </div>
+    </main>
+    <footer>
+        
+    </footer>
+    <script src = "scriptHomePage.js"></script>
+</body>
+</html>
